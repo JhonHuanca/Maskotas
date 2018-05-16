@@ -8,13 +8,13 @@
 
     <ImageView
         android:id="@+id/fotousuario"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         app:srcCompat="@drawable/usuario"
-        android:layout_marginTop="17dp"
         android:contentDescription="@string/fotousuario"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
 
     <EditText
         android:layout_width="300dp"
@@ -22,10 +22,9 @@
         android:hint="@string/nombre"
         android:inputType="textPersonName"
         android:id="@+id/txtNombre"
-        android:layout_marginTop="16dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:layout_below="@+id/fotousuario"
+        android:layout_above="@+id/txtapellido"
         android:layout_centerHorizontal="true" />
 
     <EditText
@@ -34,10 +33,9 @@
         android:hint="@string/apellido"
         android:inputType="textPersonName"
         android:id="@+id/txtapellido"
-        android:layout_marginTop="12dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:layout_below="@+id/txtNombre"
+        android:layout_above="@+id/txtcorreo"
         android:layout_alignStart="@+id/txtNombre" />
 
     <EditText
@@ -45,11 +43,10 @@
         android:layout_gravity="center"
         android:hint="@string/correo"
         android:inputType="textEmailAddress"
-        android:layout_marginTop="13dp"
         android:id="@+id/txtcorreo"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:layout_below="@+id/txtapellido"
+        android:layout_above="@+id/txtcontra"
         android:layout_alignStart="@+id/txtapellido" />
 
     <EditText
@@ -57,11 +54,10 @@
         android:layout_gravity="center"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:layout_marginTop="13dp"
         android:id="@+id/txtcontra"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:layout_below="@+id/txtcorreo"
+        android:layout_above="@+id/txtconfirmar"
         android:layout_alignStart="@+id/txtcorreo" />
 
     <EditText
@@ -69,11 +65,10 @@
         android:layout_gravity="center"
         android:hint="@string/confirmar_password"
         android:inputType="textPassword"
-        android:layout_marginTop="12dp"
         android:id="@+id/txtconfirmar"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:layout_below="@+id/txtcontra"
+        android:layout_above="@+id/btncrearcuenta"
         android:layout_alignStart="@+id/txtcontra" />
 
     <Button
@@ -83,10 +78,10 @@
         android:text="@string/crear_cuenta"
         android:layout_marginStart="12dp"
         android:id="@+id/btncrearcuenta"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/txtconfirmar"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/txtconfirmar"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+        android:layout_marginBottom="19dp" />
 
     <Button
         android:layout_gravity="center_horizontal"
@@ -101,13 +96,13 @@
 
     <Button
         android:id="@+id/btncargar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/txtNombre"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:onClick="onclick"
-        android:layout_marginBottom="12dp"
-        android:layout_marginStart="10dp"
-        android:layout_toEndOf="@+id/fotousuario"
-        android:text="@string/cargarimagen" />
+        android:text="@string/cargarimagen"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_above="@+id/txtapellido"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp" />
 
 </RelativeLayout>
