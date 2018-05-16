@@ -5,15 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="bo.com.innovasoft.maskotas.SplashScreen"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/colorPrimary">
 
     <ImageView
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:src="@mipmap/ic_launcher_round"
-        android:contentDescription="@string/imagen"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/logo_empresa"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+
         />
 
 </RelativeLayout>
