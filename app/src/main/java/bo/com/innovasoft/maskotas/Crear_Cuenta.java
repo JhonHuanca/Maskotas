@@ -98,6 +98,13 @@ public class Crear_Cuenta extends AppCompatActivity {
                     Uri path =data.getData();
                     imagen.setImageURI(path);
                  break;
+                case COD_FOTO:
+
+
+
+
+                 break;
+
             }
 
 
