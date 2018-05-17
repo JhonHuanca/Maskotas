@@ -20,6 +20,8 @@ public class Login extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+
+                //
                 Intent siguiente=new Intent(Login.this, Crear_Cuenta.class);
                 startActivity(siguiente);
                 finish();
